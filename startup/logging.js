@@ -1,5 +1,5 @@
 const winston = require("winston");
-// require("winston-mongodb");
+require("winston-mongodb");
 
 const logger = winston.createLogger({
   transports: [
@@ -14,10 +14,10 @@ const logger = winston.createLogger({
 
     new winston.transports.File({ filename: "logs/logfile.log" }),
 
-   /*  new winston.transports.MongoDB({
-      db: "mongodb://localhost/vidly",
+    new winston.transports.MongoDB({
+      db: "MONGO_URI",
       level: "info",
-    }), */
+    }),
   ],
 
   //handle global unhandled error
