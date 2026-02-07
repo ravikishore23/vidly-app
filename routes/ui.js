@@ -1,6 +1,8 @@
-module.exports = function () {
-  return (req, res, ) => {
-    res.send("Vidly Backend API is running 🚀");
-   
-  };
-};
+const express = require("express");
+const router = express.Router();
+
+router.get("/", (req, res) => {
+  res.send("Vidly Backend API is running 🚀");
+});
+
+module.exports = router;
