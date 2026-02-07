@@ -7,9 +7,11 @@ const users = require("../routes/users");
 const auth = require("../routes/auth");
 const error = require("../middleware/error");
 const returns = require("../routes/retruns");
+const ui = require("../routes/ui");
 
 module.exports = function (app) {
   app.use(express.json());
+  app.use("/", ui);
   app.use("/api/genres", genres);
   app.use("/api/customers", customers);
   app.use("/api/movies", movies);
