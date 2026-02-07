@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-const winston = require("winston");
 const logger = require("./logging");
 const config = require("config");
 
