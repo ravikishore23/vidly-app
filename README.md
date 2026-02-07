@@ -1,8 +1,3 @@
-Nice choice — a clean README really helps your portfolio 👍
-Here’s a **professional, simple README** you can directly copy-paste and use for your **Vidly Backend Project**.
-
----
-
 # 🎬 Vidly Backend API
 
 Vidly is a backend RESTful API built using **Node.js** and **Express.js** that allows users to perform **CRUD operations** on movie-related data. The application is designed following real-world backend best practices and is deployed on **Render** with **MongoDB Atlas** as the database.
